@@ -11,11 +11,12 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .header-top-wrap{
-   // background: url(./images/bg-1.jpg) no-repeat center center;
+    background: url(./images/header.jpg) no-repeat center center;
 }
 
 .header-wrap{
-   background: #000;
+
+   
 }
 
 header{
@@ -27,17 +28,26 @@ header{
 
 .logo{
     grid-column: 1/2;
+    height:50%; width:50%;
 }
 
 nav{
-    grid-column: 2/3;
-    background-color:#222222;
-   
-}
+    grid-column: 2/3;    
+    }
+nav a{
+    color:white;
+    }
+}    
 ul {
     list-style-type: none;
     }
-nav a {color: rgb(254, 209, 55);}
+li  {
+    display:inline-block;
+    margin:15px;
+    }
+li :hover {
+    color:rgb(254, 209, 55);
+            }
 .tagline{
     max-width: 1180px;
     margin: 0 auto;
