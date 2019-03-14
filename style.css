@@ -32,9 +32,12 @@ header{
 nav{
     grid-column: 2/3;
     background-color:#222222;
-    color: rgb(254, 209, 55);
+   
 }
-
+ul {
+    list-style-type: none;
+    }
+nav a {color: rgb(254, 209, 55);}
 .tagline{
     max-width: 1180px;
     margin: 0 auto;
