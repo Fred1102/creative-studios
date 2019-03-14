@@ -1,8 +1,47 @@
-.nav{
+*{
+    box-sizing: border-box;
+}
+
+body{
+    
+}
+
+h1,h2,h3,h4,h5,h6{
+
+}
+
+.header-top-wrap{
+   // background: url(./images/bg-1.jpg) no-repeat center center;
+}
+
+.header-wrap{
+   background: #000;
+}
+
+header{
+    max-width: 1180px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+}
+
+.logo{
+    grid-column: 1/2;
+}
+
+nav{
+    grid-column: 2/3;
     background-color:#222222;
-     color: rgb(254, 209, 55);
-     }
-ul{
-    list-style:none;
-    font-family:'Courier New', Courier, monospace
-    }
+    color: rgb(254, 209, 55);
+}
+
+.tagline{
+    max-width: 1180px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.tagline h4{
+    
+}
+
