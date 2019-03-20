@@ -93,3 +93,51 @@ blockquote{
     padding: 10px 30px;
 }
 
+.image-display{
+    max-width: 1180px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.home-gallery{
+    display: grid;
+    grid-template-columns: 38% 20% 38%;
+    grid-template-rows: repeat(3,33%);
+    grid-gap: 2%;
+}
+
+.box-1{
+    grid-area: 1/1/2/2;
+    text-align: right;
+}
+
+.img-1{
+    grid-area: 1/2/2/3;
+    max-width: 100%;
+}
+
+.box-2{
+    grid-area: 2/3/3/4;
+    text-align: left;
+}
+
+.img-2{
+    grid-area: 2/2/3/3;
+    max-width: 100%; 
+}
+
+.box-3{
+    grid-area: 3/1/4/2;
+    text-align: right;
+}
+
+.img-3{
+    grid-area: 3/2/4/3;
+    max-width: 100%; 
+}
+
+.img-rounded{
+    border-radius: 50%;
+    border: 5px solid #ccc;
+}
+
