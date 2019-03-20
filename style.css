@@ -153,3 +153,31 @@ blockquote{
     border: 5px solid #ccc;
 }
 
+footer {
+display:flex;
+width: 100%;
+background-color: black;
+color: white;
+text-align: center;
+height: 140px;
+  }
+
+footer .copyright {
+    position: left; 
+    margin-right: 20px; 
+}
+
+footer .privacy-policy {
+    position: center;
+    padding-top: 20px; 
+}
+footer .social-icons {
+    colour: white; 
+    float: left; 
+    padding-top: 20px; 
+}
+
+footer .terms-of-use {
+    padding-top: 40px; 
+
+}
