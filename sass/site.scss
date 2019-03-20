@@ -19,7 +19,7 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .header-top-wrap{
-    background: url(./images/header.jpg) no-repeat center center;
+    background: url(../images/header.jpg) no-repeat center center;
     background-size:100%;
 }
 
@@ -37,46 +37,44 @@ header{
 }
 
 nav{
-
     grid-column: 2/3;    
-}    
-ul {
-    list-style-type: none;
-    }
-li  {
-    display:inline-block;
-    margin:15px;
-    }
-li :hover {
-    color:rgb(254, 209, 55);
+    ul {
+        list-style-type: none;
+        li  {
+            display:inline-block;
+            margin:15px;
+            a{
+                align-items:flex-end;
+                color:white;
             }
+            &:hover{
+                color:rgb(254, 209, 55);
+            }
+        }
+    }
+}
+
 .tagline{
     max-width: 1180px;
     margin: 0 auto;
     text-align: center;
-}
-
-
-.tagline h2{
-    display:inline-block;
-    color:white;
-    font-size:55px;
-    padding:5px;
-}
-.tagline p{
-color:white;
-font-size:30px;
-}
-.tagline a{
-    color:black;
-    font-size:25px;
-    padding:5px;
-    background-color:rgb(254, 209, 55); 
-}
-header nav a{
-    color:white;
+    h2{
+        display:inline-block;
+        color:white;
+        font-size:55px;
+        padding:5px;
     }
-
+    p{
+        color:white;
+        font-size:30px;
+    }
+    a{
+        color:black;
+        font-size:25px;
+        padding:5px;
+        background-color:rgb(254, 209, 55); 
+    }
+}
 
 main{
     max-width: 1180px;
@@ -84,9 +82,11 @@ main{
     padding: 30px 0;
 }
 
-main h1{
-    font-family: 'Playball', cursive;
-    font-size: 40px;
+main{
+    h1{
+        font-family: 'Playball', cursive;
+        font-size: 40px;
+    }
 }
 
 article{
@@ -151,31 +151,3 @@ blockquote{
     border: 5px solid #ccc;
 }
 
-footer {
-display:flex;
-width: 100%;
-background-color: black;
-color: white;
-text-align: center;
-height: 140px;
-  }
-
-footer .copyright {
-    position: left; 
-    margin-right: 20px; 
-}
-
-footer .privacy-policy {
-    position: center;
-    padding-top: 20px; 
-}
-footer .social-icons {
-    colour: white; 
-    float: left; 
-    padding-top: 20px; 
-}
-
-footer .terms-of-use {
-    padding-top: 40px; 
-
-}
