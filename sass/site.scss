@@ -20,7 +20,7 @@ h1,h2,h3,h4,h5,h6{
 h2{display:inline-block;padding:5px;;background-color:rgb(254, 209, 55);}
 
 .header-top-wrap{
-    background: url(./images/header.jpg) no-repeat center center;
+    background: url(../images/header.jpg) no-repeat center center;
     background-size:100%;
 }
 
@@ -40,7 +40,8 @@ header{
 nav{
     grid-column: 2/3;    
     }
-nav a{
+nav{
+ a{
     color:white;
     }
 }    
