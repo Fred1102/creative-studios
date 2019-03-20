@@ -37,18 +37,21 @@ header{
 }
 
 nav{
-    grid-column: 2/3;    
+    grid-column: 2/3;
     ul {
+        display:flex;
+        justify-content:flex-end; 
         list-style-type: none;
         li  {
-            display:inline-block;
+            
             margin:15px;
             a{
+                display:flex;
                 align-items:flex-end;
                 color:white;
-            }
-            &:hover{
-                color:rgb(254, 209, 55);
+                &:hover{
+                    color:rgb(254, 209, 55);
+                }
             }
         }
     }
@@ -63,10 +66,12 @@ nav{
         color:white;
         font-size:55px;
         padding:5px;
+        text-shadow: 4px 3px 17px rgba(0,0,0,1);
     }
     p{
         color:white;
         font-size:30px;
+        text-shadow: 4px 3px 17px rgba(0,0,0,1);
     }
     a{
         color:black;
