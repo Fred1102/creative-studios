@@ -17,7 +17,6 @@ h1,h2,h3,h4,h5,h6{
     margin: 0 0 10px;
     padding: 0;
 }
-h2{display:inline-block;padding:5px;;background-color:rgb(254, 209, 55);}
 
 .header-top-wrap{
     background: url(./images/header.jpg) no-repeat center center;
@@ -34,13 +33,14 @@ header{
 
 .logo{
     grid-column: 1/2;
-    height:50%; width:50%;
+    height:30%; width:30%;
 }
 
 nav{
     grid-column: 2/3;    
     }
-nav a{
+header nav a{
+    align-items:flex-end;
     color:white;
     }
 }    
@@ -59,7 +59,27 @@ li :hover {
     margin: 0 auto;
     text-align: center;
 }
+<<<<<<< HEAD
 
+=======
+.tagline h2{
+    display:inline-block;
+    color:white;
+    font-size:55px;
+    padding:5px;
+}
+.tagline p{
+color:white;
+font-size:30px;
+}
+.tagline a{
+    color:black;
+    display:inline-block;
+    font-size:25px;
+    padding:5px;
+    background-color:rgb(254, 209, 55); 
+}
+>>>>>>> 27ee67151f667036c5ade1e164f94b1dafa9bf47
 
 main{
     max-width: 1180px;
