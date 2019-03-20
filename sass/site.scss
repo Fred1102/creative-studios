@@ -19,7 +19,7 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .header-top-wrap{
-    background: url(./images/header.jpg) no-repeat center center;
+    background: url(../images/header.jpg) no-repeat center center;
     background-size:100%;
 }
 
@@ -38,26 +38,42 @@ header{
 
 nav{
     grid-column: 2/3;    
-    }
-header nav a{
-    align-items:flex-end;
-    color:white;
-    }
-    
-ul {
-    list-style-type: none;
-    }
-li  {
-    display:inline-block;
-    margin:15px;
-    }
-li :hover {
-    color:rgb(254, 209, 55);
+    ul {
+        list-style-type: none;
+        li  {
+            display:inline-block;
+            margin:15px;
+            a{
+                align-items:flex-end;
+                color:white;
             }
+            &:hover{
+                color:rgb(254, 209, 55);
+            }
+        }
+    }
+}
+
 .tagline{
     max-width: 1180px;
     margin: 0 auto;
     text-align: center;
+    h2{
+        display:inline-block;
+        color:white;
+        font-size:55px;
+        padding:5px;
+    }
+    p{
+        color:white;
+        font-size:30px;
+    }
+    a{
+        color:black;
+        font-size:25px;
+        padding:5px;
+        background-color:rgb(254, 209, 55); 
+    }
 }
 
 main{
@@ -66,9 +82,11 @@ main{
     padding: 30px 0;
 }
 
-main h1{
-    font-family: 'Playball', cursive;
-    font-size: 40px;
+main{
+    h1{
+        font-family: 'Playball', cursive;
+        font-size: 40px;
+    }
 }
 
 article{
@@ -111,5 +129,25 @@ blockquote{
 .box-2{
     grid-area: 2/3/3/4;
     text-align: left;
+}
+
+.img-2{
+    grid-area: 2/2/3/3;
+    max-width: 100%; 
+}
+
+.box-3{
+    grid-area: 3/1/4/2;
+    text-align: right;
+}
+
+.img-3{
+    grid-area: 3/2/4/3;
+    max-width: 100%; 
+}
+
+.img-rounded{
+    border-radius: 50%;
+    border: 5px solid #ccc;
 }
 
