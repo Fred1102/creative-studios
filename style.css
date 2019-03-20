@@ -37,13 +37,14 @@ header{
 
 .logo{
     grid-column: 1/2;
-    height:50%; width:50%;
+    height:30%; width:30%;
 }
 
 nav{
     grid-column: 2/3;    
     }
-nav a{
+header nav a{
+    align-items:flex-end;
     color:white;
     }
 }    
