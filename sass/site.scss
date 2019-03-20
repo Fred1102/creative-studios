@@ -39,7 +39,10 @@ header{
 nav{
     grid-column: 2/3;    
     }
-
+header nav a{
+    align-items:flex-end;
+    color:white;
+    }
 }    
 ul {
     list-style-type: none;
@@ -71,18 +74,12 @@ font-size:30px;
 }
 .tagline a{
     color:black;
+    display:inline-block;
     font-size:25px;
     padding:5px;
     background-color:rgb(254, 209, 55); 
 }
-<<<<<<< HEAD
-header nav a{
-    align-items:;
-    color:white;
-    }
-=======
 >>>>>>> 27ee67151f667036c5ade1e164f94b1dafa9bf47
->>>>>>> 74e46ff5c6d74be879c8f5b3fd51c6202154c44d
 
 main{
     max-width: 1180px;
@@ -135,25 +132,5 @@ blockquote{
 .box-2{
     grid-area: 2/3/3/4;
     text-align: left;
-}
-
-.img-2{
-    grid-area: 2/2/3/3;
-    max-width: 100%; 
-}
-
-.box-3{
-    grid-area: 3/1/4/2;
-    text-align: right;
-}
-
-.img-3{
-    grid-area: 3/2/4/3;
-    max-width: 100%; 
-}
-
-.img-rounded{
-    border-radius: 50%;
-    border: 5px solid #ccc;
 }
 
