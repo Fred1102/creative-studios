@@ -1,17 +1,20 @@
+@import "./gallery";
+
 *{
     box-sizing: border-box;
 }
 
-body{
-    
 
-    font-family: 'Open Sans', sans-serif;
-    
-    
+$font-open :'Open Sans', sans-serif;
+$font-play:'Playball', cursive;
+$font-slabo :'Slabo 27px', serif;
+
+body{
+    font-family: $font-open;
 }
 
 h1,h2,h3,h4,h5,h6{
-    font-family: 'Playball', cursive;
+    font-family: $font-play;
     font-size: 30px;
     font-weight: 700;
     margin: 0 0 10px;
@@ -37,18 +40,21 @@ header{
 }
 
 nav{
-    grid-column: 2/3;    
+    grid-column: 2/3;
     ul {
+        display:flex;
+        justify-content:flex-end; 
         list-style-type: none;
         li  {
-            display:inline-block;
+            
             margin:15px;
             a{
+                display:flex;
                 align-items:flex-end;
                 color:white;
-            }
-            &:hover{
-                color:rgb(254, 209, 55);
+                &:hover{
+                    color:rgb(254, 209, 55);
+                }
             }
         }
     }
@@ -63,10 +69,12 @@ nav{
         color:white;
         font-size:55px;
         padding:5px;
+        text-shadow: 4px 3px 17px rgba(0,0,0,1);
     }
     p{
         color:white;
         font-size:30px;
+        text-shadow: 4px 3px 17px rgba(0,0,0,1);
     }
     a{
         color:black;
