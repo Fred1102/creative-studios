@@ -159,6 +159,28 @@ blockquote{
     border: 5px solid #ccc;
 }
 
+.about-us 
+
+.card {
+    border: none !important; 
+
+
+}
+
+.card-body {
+    flex: 1 1 auto;
+    flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: auto; 
+padding: 1.25rem; 
+display: block;
+font-weight: 200; 
+    }
+
+    img {
+        border-radius: 50%;
+      }
+
 footer {
     width: 100%;
     padding: 20px; 
@@ -167,6 +189,7 @@ footer {
     text-align: center;
     height: 140px;
     justify-content: center; 
+
     .article1 {
         float: left; 
         width: 20%;   
@@ -203,4 +226,5 @@ footer {
         }
     }
 }
-    
+
+
