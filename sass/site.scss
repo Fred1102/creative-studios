@@ -151,3 +151,48 @@ blockquote{
     border: 5px solid #ccc;
 }
 
+footer {
+    width: 100%;
+    padding: 20px; 
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 140px;
+    justify-content: center; 
+    .article1 {
+        float: left; 
+        width: 20%;   
+     }
+    .article2 {
+        float: left;
+        width: 20%;  
+    }
+    .nav-footer {
+        float: left; 
+        color: rgb(0, 0, 0); 
+        width: 20%; 
+    }
+
+    .article3 {
+        float: left; 
+        width: 40%; 
+    }
+}
+
+.social-icons {
+    ul {
+        list-style-type: none;
+        li  {
+            display:inline-block;
+            margin:5px;
+            a{
+                align-items:flex-end;
+                color:white;
+            }
+            &:hover{
+                color:rgb(254, 209, 55);
+            }
+        }
+    }
+}
+    
