@@ -31,12 +31,11 @@ header{
     max-width: 1180px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(2,50%);
+    grid-template-columns: 25% 75%;
 }
 
 .logo{
     grid-column: 1/2;
-    height:30%; width:30%;
 }
 
 nav{
@@ -90,6 +89,10 @@ nav{
     }
 }
 
+.main-wrap{
+    padding: 20px 10px;
+}
+
 main{
     max-width: 1180px;
     margin: 0 auto;
@@ -105,14 +108,34 @@ main{
     }
 }
 
+// @mixin breakpoint($property) {
+//     @media only screen and (max-width: $property) {
+//         @content;
+//     }
+// }
+
 article.home{
-    -webkit-column-count: 3; /* Chrome, Safari, Opera */
-    -moz-column-count: 3; /* Firefox */
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
     column-count: 2;
     font-size: 20px;
     line-height: 1.5;
     font-weight: 400;
+    // @include breakpoint(max-width 750px) {
+    //     background: #ccc;
+    // }
+    @media only screen and (max-width: 650px) {
+        -webkit-column-count: 1; /* Chrome, Safari, Opera */
+        -moz-column-count: 1; /* Firefox */
+        column-count: 1;
+    }
 }
+
+
+  
+
+ 
+  
 
 blockquote{
     border-left: 5px solid rgb(254, 209, 55);
@@ -124,6 +147,10 @@ blockquote{
     margin: 0 auto;
     text-align: center;
     padding: 20px 10px;
+    @media only screen and (max-width: 650px) {
+        text-align: left;
+        padding: 20px 0;
+     }
 }
 
 .home-gallery{
@@ -131,11 +158,17 @@ blockquote{
     grid-template-columns: 38% 20% 38%;
     grid-template-rows: repeat(3,32%);
     grid-gap: 2%;
+    @media only screen and (max-width: 650px) {
+        display: block;
+    }
 }
 
 .box-1{
     grid-area: 1/1/2/2;
     text-align: right;
+    @media only screen and (max-width: 650px) {
+       text-align: left;
+    }
 }
 
 .img-1{
@@ -156,6 +189,9 @@ blockquote{
 .box-3{
     grid-area: 3/1/4/2;
     text-align: right;
+    @media only screen and (max-width: 650px) {
+        text-align: left;
+     }
 }
 
 .img-3{
@@ -192,7 +228,6 @@ font-weight: 200;
 
 .footer-wrap{
     background-color: black;
-
 }
 
 footer {
@@ -203,26 +238,48 @@ footer {
     .article1 {
         float: left; 
         width: 25%;   
+        @media only screen and (max-width: 650px) {
+            float: none;
+            width: auto;
+            text-align: center
+        }
      }
     .article2 {
         float: left;
         width: 25%;  
+        @media only screen and (max-width: 650px) {
+            float: none;
+            width: auto;
+            text-align: center;
+        }
     }
     .nav-footer {
         float: left; 
         color: rgb(0, 0, 0); 
         width: 25%; 
+        @media only screen and (max-width: 650px) {
+            float: none;
+            width: auto;
+            text-align: center;
+        }
     }
 
     .article3 {
         float: left; 
         width: 25%; 
+        @media only screen and (max-width: 650px) {
+            float: none;
+            width: auto;
+            text-align: center;
+        }
     }
 }
 
 .social-icons {
     ul {
-        list-style-type: none;
+        list-style: none;
+        padding: 0;
+        margin: 0;
         li  {
             display:inline-block;
             margin:0 10px;
