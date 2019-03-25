@@ -109,6 +109,11 @@ main{
     }
 }
 
+<<<<<<< HEAD
+article{
+    -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+=======
 // @mixin breakpoint($property) {
 //     @media only screen and (max-width: $property) {
 //         @content;
@@ -118,6 +123,7 @@ main{
 article.home{
     -webkit-column-count: 2; /* Chrome, Safari, Opera */
     -moz-column-count: 2; /* Firefox */
+>>>>>>> 360d0ffc0d9ff3194f301292bbfa60dafec7fe15
     column-count: 2;
     font-size: 20px;
     line-height: 1.5;
@@ -209,8 +215,6 @@ blockquote{
 
 .card {
     border: none !important; 
-
-
 }
 
 .card-body {
