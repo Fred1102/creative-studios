@@ -18,17 +18,37 @@ form{
 }
 input[type=text]{
     width: 100%;
+    padding: 10px 10px;
 } 
 input[type=submit]{
     width: 300px;
+    background: #fed137;
+    padding: 10px 10px;
+    font-size: 38px;
+    color: #000;
+    font-family: 'Playball', cursive;
+    &:hover{
+        background: #000;
+        color: #fed137;
+    }
 } 
 textarea{
     width: 100%;
     height: 200px;
+    padding: 10px 10px;
+}
+.address-block{
+    padding: 44px 10px;
 } 
 
 .address{
-    padding: 20px 0;
+    margin: 0 0 20px;
+    font-size: 20px;
+    font-family: 'Slabo 27px', serif;
+    a{
+        text-decoration: none;
+        color: #000;
+    }
 }
 
 

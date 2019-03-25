@@ -5,7 +5,6 @@
     box-sizing: border-box;
 }
 
-
 $font-open :'Open Sans', sans-serif;
 $font-play:'Playball', cursive;
 $font-slabo :'Slabo 27px', serif;
@@ -13,6 +12,20 @@ $font-slabo :'Slabo 27px', serif;
 body{
     font-family: $font-open;
 }
+
+.parallax {
+    /* The image used */
+    background-image: url("../images/header.jpg");
+  
+    /* Set a specific height */
+    min-height: 300px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 
 h1,h2,h3,h4,h5,h6{
     font-family: $font-play;
@@ -24,11 +37,24 @@ h1,h2,h3,h4,h5,h6{
 
 .header-top-wrap{
     background: url(../images/header.jpg) no-repeat center center;
-    background-size:cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
+.sticky-top-header{
+    background: #000;
+    position: fixed;
+    width: 100%;
+    z-index: 999999;
+    img{
+        width: 150px;
+    }
+}
 
 header{
+    padding: 10px 20px;
     max-width: 1180px;
     margin: 0 auto;
     display: grid;
@@ -298,3 +324,4 @@ footer {
     max-width: 1180px;
     margin: 0 auto;
 }
+

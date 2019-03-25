@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800|Playball" rel="stylesheet" /> 
     <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet" />  
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"> </script>
     <title>creative-studio</title>
 </head>
 <body>
@@ -26,6 +27,7 @@
                 </nav>
             </header>
         </div>
+        
         <div class="tagline-wrap">
             <div class="tagline">
                 <h2>Welcome to our studio</h2>
@@ -80,6 +82,8 @@
             </div>
         </main>
     </div>
+    <div class="parallax"></div>
+
     <div class="main-wrap" id="gallery">
         <main>
             <h1 class="page-title">Image Gallery</h1>
@@ -197,23 +201,23 @@
       <form >
           <div  class="contact-form">
               Name
-              <input type="text" class="input" name="name" placeholder="name"><br>
+              <input type="text" class="input" name="name" placeholder="Name"><br>
               E-mail
-              <input type="text" class="input" placeholder="e-mail"><br>
+              <input type="text" class="input" placeholder="E-mail"><br>
               Subject
-              <input type="text" class="input" placeholder="subject"><br>
+              <input type="text" class="input" placeholder="Subject"><br>
               Message<br>
-              <textarea type="textarea" class="input" value="textarea"  placeholder="message" ></textarea><br>
+              <textarea type="textarea" class="input" value="textarea"  placeholder="Message" ></textarea><br>
               <input type="submit" id="send" value="submit">
             </div>
       </form>
       <div class="address-block">
         <div class="address">
           <b>Creative studio</b><br>
-          9000 Gent<br>
+          232/202 Gustaaf Callierlaan , 9000 Gent<br>
           Belgium<br>
           <br>
-          Ph : +91 9964153778<br>
+          <a href="tel: +91 9964153778 ">Phone : +91 9964153778</a><br>
           Fax : 8865334009
         </div>
         <div class="map">
@@ -250,6 +254,14 @@
   </div>
   </footer>
 </div>
-
+<script>
+    $(window).scroll(function() {
+		if ( $(window).scrollTop() >= 1 ) {
+			$(".header-wrap").addClass("sticky-top-header");
+		} else {
+			$(".header-wrap").removeClass("sticky-top-header");
+		}
+	});
+</script>
 </body>
 </html>
