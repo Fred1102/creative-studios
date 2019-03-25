@@ -97,7 +97,7 @@ main{
     }
 }
 
-article.home{
+article{
     -webkit-column-count: 3; /* Chrome, Safari, Opera */
     -moz-column-count: 3; /* Firefox */
     column-count: 2;
@@ -163,8 +163,6 @@ blockquote{
 
 .card {
     border: none !important; 
-
-
 }
 
 .card-body {
