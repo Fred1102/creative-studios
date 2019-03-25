@@ -1,0 +1,27 @@
+.contact-form{
+    margin-left:130px;
+    margin-right:130px;
+    margin-top:30px;
+    margin-bottom:50px;
+    display:block;
+    background-color:lightgray;
+    border-radius:25px;
+    padding:25px;
+    display:flex;
+    flex-direction: column;
+}
+.textarea{
+height:500px;
+}
+input[type=text]{
+    width: 300px;
+} 
+input[type=submit]{
+    width: 200px;
+} 
+input[type=textarea]{
+    width: 200px;
+} 
+
+
+
