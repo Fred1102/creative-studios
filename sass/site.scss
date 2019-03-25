@@ -23,7 +23,7 @@ h1,h2,h3,h4,h5,h6{
 
 .header-top-wrap{
     background: url(../images/header.jpg) no-repeat center center;
-    background-size:100%;
+    background-size:cover;
 }
 
 
@@ -52,6 +52,8 @@ nav{
                 display:flex;
                 align-items:flex-end;
                 color:white;
+                font-weight: 700;
+                font-size: 20px;
                 &:hover{
                     color:rgb(254, 209, 55);
                 }
@@ -64,6 +66,7 @@ nav{
     max-width: 1180px;
     margin: 0 auto;
     text-align: center;
+    padding: 20px 10px;
     h2{
         display:inline-block;
         color:white;
@@ -81,6 +84,9 @@ nav{
         font-size:25px;
         padding:5px;
         background-color:rgb(254, 209, 55); 
+        display: table;
+        margin: 0 auto;
+        padding: 10px 20px;
     }
 }
 
