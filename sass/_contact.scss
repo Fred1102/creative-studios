@@ -10,17 +10,15 @@
     display:flex;
     flex-direction: column;
 }
-.textarea{
-height:500px;
-}
 input[type=text]{
-    width: 300px;
+    width: 30%;
 } 
 input[type=submit]{
-    width: 200px;
+    width: 10%;
 } 
-input[type=textarea]{
-    width: 200px;
+textarea{
+    width: 50%;
+    height: 200px;
 } 
 
 
