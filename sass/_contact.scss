@@ -1,11 +1,12 @@
-.contact-form{
-    margin-left:130px;
-    margin-right:130px;
-    margin-top:30px;
-    margin-bottom:50px;
-    display:block;
+.form-box{
+    max-width: 1180px;
+    margin: 0 auto 30px;
     background-color:lightgray;
     border-radius:25px;
+}
+
+.contact-form{
+    display:block;
     padding:25px;
     display:flex;
     flex-direction: column;
