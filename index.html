@@ -20,9 +20,9 @@
                 <nav>
                     <ul>
                         <li><a href="#home">Home</a></li>
-                        <li><a href="#about-us">About Us</a></li>
-                        <li><a href="#gallery">Gallery</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a  href="#" id="btn-about">About Us</a></li>
+                        <li><a href="#" id="btn-gallery">Gallery</a></li>
+                        <li><a href="#" id="btn-contact">Contact</a></li>
                     </ul>
                 </nav>
             </header>
@@ -261,7 +261,27 @@
 		} else {
 			$(".header-wrap").removeClass("sticky-top-header");
 		}
-	});
+    });
+    
+    $("#btn-about").click(function() {
+        $('html,body').animate({
+            scrollTop: $("#about-us").offset().top 
+        },1800);
+    });
+
+    $("#btn-gallery").click(function() {
+        $('html,body').animate({
+            scrollTop: $("#gallery").offset().top 
+        },1800);
+    });
+
+    $("#btn-contact").click(function() {
+        $('html,body').animate({
+            scrollTop: $("#contact").offset().top 
+        },1800);
+    });
+
+    
 </script>
 </body>
 </html>
